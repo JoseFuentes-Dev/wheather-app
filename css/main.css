@@ -206,7 +206,7 @@ main .bottm-section .top span {
   position: relative;
 }
 main .bottm-section .top span img {
-  position: absolute;
-  bottom: 2px;
+  position: relative;
+  bottom: -5px;
   width: 1.2em;
 }/*# sourceMappingURL=main.css.map */
