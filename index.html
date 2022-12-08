@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <meta name="description" content="My Weather App ">
+    <link rel="stylesheet" href="css/main.css">
+    
+
+</head>
+<body>
+    <main>
+        <div class="top-contain">
+           <button> <img src="icon/Pin.png" aria-hidden="true"></button>
+            <div class="autocomplete-container" id="autocomplete-container"></div>
+        </div>
+        <div class="location">
+            <h1>
+                -
+            </h1>
+        </div>
+
+         <div class="weather-contain">
+            <div class="weather-icon">
+                <img src="icon/unknow.png" alt="">
+            </div>
+            <div class="temperature-value">
+                <h2>-<sup>o</sup></h2>
+            </div>
+            <div class="feels-like">
+                <span>Feels like -<sup>o</sup></span>
+            </div>
+            <div class="temperature-description">
+                <h3>-</h3>
+            </div>
+         </div>
+         <div class="details">
+            <div class="ico1">
+             <div class="imgcontain">  <img src="icon/presure.png"></div> 
+             <div class="presure">
+                 <span>-km/h</span>
+                </div>
+            </div>
+            <div class="ico2">
+              <div class="imgcontain"><img src="icon/humidity.png"></div>  
+              <div class="humidity">
+                  <span>-%</span>
+                </div>
+            </div>
+         </div>
+         <section class="bottm-section">
+            <div class="top">
+                <h3>Today</h3>
+                <a href="#"><span>Next 7 Days <img src="icon/chevron-forward-outline.svg"></span></a>
+            </div>
+
+         </section>
+    </main>
+
+
+    <script src="js/app.js"></script>
+<script src="js/vanilla-tilt.js"></script>
+<script>
+        VanillaTilt.init(document.querySelector(".weather-contain"), {
+		max: 25,
+		speed: 400,
+        glare:true,
+        "max-glare":1,
+	});
+</script>
+</body>
+</html>
