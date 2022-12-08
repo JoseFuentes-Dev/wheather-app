@@ -50,6 +50,8 @@ main{
             filter: drop-shadow(5px 6px 8px rgba(#000,.3));
         }
         h2{
+            cursor: pointer;
+            user-select: none;
             position: absolute;
             top: 0;
             right: 2px;

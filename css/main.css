@@ -135,6 +135,11 @@ main .weather-contain img {
   filter: drop-shadow(5px 6px 8px rgba(0, 0, 0, 0.3));
 }
 main .weather-contain h2 {
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   position: absolute;
   top: 0;
   right: 2px;
