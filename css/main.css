@@ -41,8 +41,8 @@ body {
   border-radius: 15px;
   padding-left: 10px;
   box-shadow: inset -2px -2px 5px rgba(0, 0, 0, 0.3);
-  -webkit-box-shadow: inset -2px -2px 5px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: inset -2px -2px 5px rgba(0, 0, 0, 0.3);
+  -x-webkit-box-shadow: inset -2px -2px 5px rgba(0, 0, 0, 0.3);
+  -x-moz-box-shadow: inset -2px -2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .autocomplete-items div {
