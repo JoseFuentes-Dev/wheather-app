@@ -17,10 +17,7 @@ body {
 .input-container {
   display: flex;
   position: relative;
-  box-shadow: inset -2px -2px 5px rgba(0, 0, 0, 0.3);
-  -webkit-box-shadow: inset -2px -2px 5px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: inset -2px -2px 5px rgba(0, 0, 0, 0.3);
-  border-radius: 15px;
+  border: none;
 }
 
 .input-container input {
@@ -28,9 +25,6 @@ body {
   outline: none;
   border: none;
   padding: 10px 31px 10px;
-  box-shadow: inset -2px -2px 5px rgba(0, 0, 0, 0.3);
-  -webkit-box-shadow: inset -2px -2px 5px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: inset -2px -2px 5px rgba(0, 0, 0, 0.3);
   font-size: 14px;
   font-weight: 400;
 }

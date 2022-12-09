@@ -12,6 +12,7 @@ function addressAutocomplete(containerElement, callback, options) {
     const inputElement = document.createElement("input");
     inputElement.setAttribute("type", "text");
     inputElement.style.borderRadius='15px';
+    inputElement.style.boxShadow='inset -2px -2px 5px rgba(0, 0, 0, .3)';
     inputElement.style.padding='15px'
     inputElement.setAttribute("placeholder", options.placeholder);
     inputContainerElement.appendChild(inputElement);
