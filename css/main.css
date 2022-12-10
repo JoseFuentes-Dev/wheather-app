@@ -106,18 +106,35 @@ main .top-contain {
   gap: 10px;
   text-align: left;
   margin-top: 3.125rem;
+  position: relative;
 }
 main .top-contain button {
   border: none;
   background: none;
   cursor: pointer;
+  z-index: 1;
+  -webkit-animation: animateimg 1.4s linear infinite;
+          animation: animateimg 1.4s linear infinite;
 }
 main .top-contain img {
   width: 32px;
+  position: relative;
 }
 main .top-contain img:hover {
   filter: brightness(1.2);
   transition: 0.3s ease;
+}
+main .top-contain .shadow {
+  position: absolute;
+  width: 20px;
+  height: 10px;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 50%;
+  bottom: 0;
+  left: 6.5px;
+  filter: blur(3px);
+  -webkit-animation: animate 1.4s linear infinite;
+          animation: animate 1.4s linear infinite;
 }
 main .location h1 {
   font-weight: 900;
@@ -181,7 +198,7 @@ main .details .imgcontain {
   cursor: pointer;
 }
 main .details .imgcontain img {
-  width: 40px;
+  width: 30px;
 }
 main .details .imgcontain img:hover {
   transition: 0.5s ease;
@@ -220,4 +237,62 @@ main .bottm-section .top span img {
   position: relative;
   bottom: -5px;
   width: 1.2em;
+}
+
+@-webkit-keyframes animateimg {
+  0% {
+    margin-top: -10px;
+  }
+  50% {
+    margin-top: 0;
+  }
+  100% {
+    margin-top: -10px;
+  }
+}
+
+@keyframes animateimg {
+  0% {
+    margin-top: -10px;
+  }
+  50% {
+    margin-top: 0;
+  }
+  100% {
+    margin-top: -10px;
+  }
+}
+@-webkit-keyframes animate {
+  0% {
+    height: 5px;
+    width: 10px;
+    left: 10px;
+  }
+  50% {
+    height: 10px;
+    width: 20px;
+    left: 6.5px;
+  }
+  100% {
+    height: 5px;
+    width: 10px;
+    left: 10px;
+  }
+}
+@keyframes animate {
+  0% {
+    height: 5px;
+    width: 10px;
+    left: 10px;
+  }
+  50% {
+    height: 10px;
+    width: 20px;
+    left: 6.5px;
+  }
+  100% {
+    height: 5px;
+    width: 10px;
+    left: 10px;
+  }
 }/*# sourceMappingURL=main.css.map */
