@@ -18,9 +18,6 @@ body {
   display: flex;
   position: relative;
   border: none;
-  box-shadow: inset -2px -2px 5px rgba(0, 0, 0, 0.3);
-  -webkit-box-shadow: inset -2px -2px 5px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: inset -2px -2px 5px rgba(0, 0, 0, 0.3);
   border-radius: 15px;
 }
 
@@ -34,6 +31,7 @@ body {
   box-shadow: inset -2px -2px 5px rgba(0, 0, 0, 0.3);
   -webkit-box-shadow: inset -2px -2px 5px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: inset -2px -2px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
 }
 
 .autocomplete-items {
