@@ -50,7 +50,7 @@ label:after {
 }
 
 input:checked + label {
-  background: #70A5FE;
+  background: #abb4fa;
 }
 
 input:checked + label:after {
@@ -265,8 +265,18 @@ main .details .ico1 .humidity span, main .details .ico1 .presure span, main .det
   font-weight: 600;
 }
 
+.light .weather-contain {
+  background: linear-gradient(#abb4fa, #3142fe);
+  box-shadow: 5px 6px 10px rgba(49, 66, 254, 0.7);
+}
 .light .location h1 {
   color: #fff;
+}
+.light input {
+  background: #eff5ff;
+}
+.light .details .imgcontain {
+  background: #dfeaff;
 }
 .light .ico1 .presure span, .light .ico1 .humidity span, .light .ico2 .presure span, .light .ico2 .humidity span {
   color: #fff;

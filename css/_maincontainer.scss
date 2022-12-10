@@ -126,9 +126,21 @@ main{
     }
 }
 .light{
+        .weather-contain{
+            background:linear-gradient(#abb4fa, #3142fe);
+            box-shadow:5px 6px 10px rgba(#3142fe, .7);
+    }
     .location{
         h1{
             color: #fff;
+        }
+    }
+    input{
+        background: #eff5ff;
+    }
+    .details{
+        .imgcontain{
+            background: #dfeaff;
         }
     }
     .ico1, .ico2{
