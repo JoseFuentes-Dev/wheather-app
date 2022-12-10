@@ -1,4 +1,5 @@
 main{
+   
    display: flex;
    flex-direction: column;
    position: relative;
@@ -40,9 +41,10 @@ main{
         }         
     }
     .location{
+        margin-top: 1rem;
         h1{
             font-weight: 900;
-            font-size: 2.3em;
+            font-size: 2.7em;
             color: #000;
         }
         h1 .light{
@@ -51,7 +53,7 @@ main{
     }
     .weather-contain{
         position: relative;
-        margin-top: 50px;
+        margin-top: 5rem;
         height: 200px;
         min-width: 100%;
         background:linear-gradient(#abc8fa, #70A5FE);
@@ -124,6 +126,9 @@ main{
         }
         }
     }
+}
+.imgperson{
+    display: none;
 }
 .light{
         .weather-contain{

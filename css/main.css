@@ -181,9 +181,12 @@ main .top-contain .shadow {
   -webkit-animation: animate 1.4s linear infinite;
           animation: animate 1.4s linear infinite;
 }
+main .location {
+  margin-top: 1rem;
+}
 main .location h1 {
   font-weight: 900;
-  font-size: 2.3em;
+  font-size: 2.7em;
   color: #000;
 }
 main .location h1 .light {
@@ -191,7 +194,7 @@ main .location h1 .light {
 }
 main .weather-contain {
   position: relative;
-  margin-top: 50px;
+  margin-top: 5rem;
   height: 200px;
   min-width: 100%;
   background: linear-gradient(#abc8fa, #70A5FE);
@@ -263,6 +266,10 @@ main .details .ico1, main .details .ico2 {
 main .details .ico1 .humidity span, main .details .ico1 .presure span, main .details .ico2 .humidity span, main .details .ico2 .presure span {
   font-size: 0.8em;
   font-weight: 600;
+}
+
+.imgperson {
+  display: none;
 }
 
 .light .weather-contain {
@@ -337,5 +344,30 @@ main .details .ico1 .humidity span, main .details .ico1 .presure span, main .det
     height: 5px;
     width: 10px;
     left: 10px;
+  }
+}
+/* responsive mobile -more-than: Mobile: 900px */
+@media only screen and (min-width: 930px) {
+  body {
+    flex-direction: row;
+    justify-content: center;
+  }
+  body main {
+    width: 70%;
+  }
+  body main .details {
+    position: absolute;
+    justify-content: space-around;
+    bottom: -110px;
+    gap: 60px;
+    left: 10px;
+  }
+  body .imgperson {
+    position: absolute;
+    display: block;
+    width: 800px;
+    bottom: -150px;
+    right: 0;
+    filter: drop-shadow(4px 4px 15px rgba(0, 0, 0, 0.7));
   }
 }/*# sourceMappingURL=main.css.map */
