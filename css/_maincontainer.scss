@@ -1,16 +1,15 @@
 main{
    display: flex;
    flex-direction: column;
-   justify-content: space-between;
-   gap: 40px;
    position: relative;
   width: 90%;
+  gap: 50px;
     .top-contain{
           display: flex;
           flex-direction: row;
           gap: 10px;
           text-align: left;
-          margin-top: 3.125rem;
+         margin-top: -2rem;
           position: relative;
     
           button{
@@ -44,6 +43,10 @@ main{
         h1{
             font-weight: 900;
             font-size: 2.3em;
+            color: #000;
+        }
+        h1 .light{
+            color: #fff;
         }
     }
     .weather-contain{
@@ -121,30 +124,23 @@ main{
         }
         }
     }
-    .bottm-section{
-        padding: 10px;
-        .top{
-            display: flex;
-            justify-content: space-between;
-            a{
-                text-decoration: none;
-                text-align: center;
-            }
+}
+.light{
+    .location{
+        h1{
+            color: #fff;
+        }
+    }
+    .ico1, .ico2{
+        .presure, .humidity{
             span{
-                font-size: .8em;
-                text-decoration: none;
-                color: #70A5FE;
-                font-weight: 400;
-                position: relative;
-                img{
-                    position: relative;
-                    bottom: -5px;
-                   width: 1.2em;
-                }
+                color: #fff;
             }
         }
     }
-}
+    }
+
+
 @keyframes animateimg {
     0%{
     margin-top: -10px;
@@ -173,4 +169,3 @@ main{
         left: 10px;
     }
 }
-

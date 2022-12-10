@@ -199,13 +199,11 @@ function getWeather(latitude, longitude){
         weather.country = data.sys.country;
         weather.presure = Math.floor(data.wind.speed);
         weather.humidity = data.main.humidity;
-
     })
     .then(function(){
         displayWeather();
     });
-}
-
+}   
 // DISPLAY WEATHER TO UI
 function displayWeather(){
     iconElement.innerHTML = `<img src="icon/icons/${weather.iconId}.png"/>`;
@@ -230,7 +228,7 @@ tempElement.addEventListener("click", function(){
         let fahrenheit = celsiusToFahrenheit(weather.temperature.value);
         fahrenheit = Math.floor(fahrenheit);
         
-        tempElement.innerHTML = `${fahrenheit}°<span>F</span>`;
+        tempElement.innerHTML = `${fahrenheit}°`;
         weather.temperature.unit = "fahrenheit";
     }else{
         tempElement.innerHTML = `${weather.temperature.value}°<span>C</span>`;
@@ -329,6 +327,11 @@ tempElement.addEventListener("click", function(){
     }, {
     placeholder: "Enter an address here"
     });
-    
-    
+
+let body = document.querySelector('body');
+let btn = document.querySelector('#switch');
+btn.onclick=function(){
+ body.classList.toggle('light');
+}
+
     

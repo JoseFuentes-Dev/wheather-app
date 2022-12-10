@@ -14,6 +14,54 @@ body {
   align-items: center;
 }
 
+body.light {
+  transition: all 1s ease;
+  background: #000;
+}
+
+input[type=checkbox] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 60px;
+  height: 30px;
+  background: #393d50;
+  display: block;
+  border-radius: 100px;
+  position: relative;
+  left: 85%;
+}
+
+label:after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border-radius: 90px;
+  transition: 0.3s;
+}
+
+input:checked + label {
+  background: #70A5FE;
+}
+
+input:checked + label:after {
+  left: calc(100% - 5px);
+  transform: translateX(-100%);
+}
+
+label:active:after {
+  width: 40px;
+}
+
 .input-container {
   display: flex;
   position: relative;
@@ -93,17 +141,16 @@ body {
 main {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  gap: 40px;
   position: relative;
   width: 90%;
+  gap: 50px;
 }
 main .top-contain {
   display: flex;
   flex-direction: row;
   gap: 10px;
   text-align: left;
-  margin-top: 3.125rem;
+  margin-top: -2rem;
   position: relative;
 }
 main .top-contain button {
@@ -137,6 +184,10 @@ main .top-contain .shadow {
 main .location h1 {
   font-weight: 900;
   font-size: 2.3em;
+  color: #000;
+}
+main .location h1 .light {
+  color: #fff;
 }
 main .weather-contain {
   position: relative;
@@ -213,28 +264,12 @@ main .details .ico1 .humidity span, main .details .ico1 .presure span, main .det
   font-size: 0.8em;
   font-weight: 600;
 }
-main .bottm-section {
-  padding: 10px;
+
+.light .location h1 {
+  color: #fff;
 }
-main .bottm-section .top {
-  display: flex;
-  justify-content: space-between;
-}
-main .bottm-section .top a {
-  text-decoration: none;
-  text-align: center;
-}
-main .bottm-section .top span {
-  font-size: 0.8em;
-  text-decoration: none;
-  color: #70A5FE;
-  font-weight: 400;
-  position: relative;
-}
-main .bottm-section .top span img {
-  position: relative;
-  bottom: -5px;
-  width: 1.2em;
+.light .ico1 .presure span, .light .ico1 .humidity span, .light .ico2 .presure span, .light .ico2 .humidity span {
+  color: #fff;
 }
 
 @-webkit-keyframes animateimg {
