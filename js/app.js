@@ -11,7 +11,8 @@ function addressAutocomplete(containerElement, callback, options) {
     // create input element
     const inputElement = document.createElement("input");
     inputElement.setAttribute("type", "text");
-    inputElement.style.padding='15px'
+    inputElement.style.padding='15px';
+    inputElement.style.fontSize ='14px';
     inputElement.setAttribute("placeholder", options.placeholder);
     inputContainerElement.appendChild(inputElement);
     
